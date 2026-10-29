@@ -1,0 +1,41 @@
+@media (max-width: 1280px) {
+      .container {
+    width: 90%;
+  }
+  .schedule-and-speakers-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .schedule-and-speakers-part {
+    width: 100%;
+  }
+
+  .speakers {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "h"
+      "a"
+      "b"
+      "c";
+  }
+
+  .know-part {
+    margin-top: 20px;
+  }
+
+  .contact-card,
+  .message-form {
+    width: 100%;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contact-card .btn {
+    width: 100%;
+  }
+}
