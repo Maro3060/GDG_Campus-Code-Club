@@ -329,7 +329,7 @@ label {
 input,
 textarea {
   width: 100%;
-  border: 16rem solid var(--color-border-input);
+  border: 0.125rem solid var(--color-border-input);
   border-radius: 0.625rem;
   padding: 0.625rem;
   font: inherit;
