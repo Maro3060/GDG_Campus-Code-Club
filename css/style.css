@@ -51,6 +51,7 @@ nav {
   top: 0;
   left: 0;
   right: 0;
+  z-index: 999999;
 }
 
 nav span {
@@ -136,6 +137,7 @@ header span {
 section#schedule {
   background-color: var(--color-bg);
 }
+
 .schedule-and-speakers-part {
   width: 70%;
 }
@@ -167,6 +169,7 @@ section#schedule {
   position: sticky;
   top: 12%
 }
+
 .know-part ul {
   display: flex;
   flex-direction: column;
@@ -226,4 +229,111 @@ section#schedule {
   align-items: center;
   row-gap: 0.9375rem;
 }
+
+.join-content .reserve {
+  background-color: var(--color-primary);
+  border: solid 2px var(--color-primary);
+}
+
+.join-content .reserve a {
+  color: var(--color-text-white)
+}
 /* end join section */
+
+/* start contact section */
+section#contact {
+  background-color: var(--color-bg);
+}
+
+.conatct-content {
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.contact-card,
+.message-form {
+  width: 60%;
+  padding: 30px;
+  border-radius: 16px;
+  background-color: var(--color-surface);
+}
+
+.name-and-ttle {
+  margin-bottom: 5px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+}
+
+.contact-card .name-and-ttle p {
+  color: var(--color-hero-start)
+}
+
+.contact-card .info {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+
+.contact-card .info-data {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.conatct-content .contact-card .info .avatar {
+  width: 100px;
+  height: 100px;
+  color: var(--color-text-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--gradient-hero);
+  border-radius: 50%;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.btn {
+  background-color: var(--color-primary);
+  width: fit-content;
+  padding: 10px 10px;
+  border-radius: 1.875rem;
+  color: var(--color-text-white);
+}
+
+.message-form h3{
+  margin-bottom: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  row-gap: 10px;
+}
+
+
+label {
+  font-size: var(--fs-label);
+  font-weight: 600;
+}
+
+input,
+textarea {
+  width: 100%;
+  border: 1px solid var(--color-border-input);
+  border-radius: 10px;
+  padding: 10px;
+  font: inherit;
+}
+
+input:hover,
+textarea:hover {
+  border-color: var(--color-text);
+}
+/* end contact section */
