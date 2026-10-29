@@ -8,7 +8,11 @@
   --color-primary: #1d56c0;
   --color-hero-start: #1f5bc7;
   --color-hero-end: #1a8a3f;
-  --gradient-hero: linear-gradient(135deg, var(--color-hero-start), var(--color-hero-end));
+  --gradient-hero: linear-gradient(
+    135deg,
+    var(--color-hero-start),
+    var(--color-hero-end)
+  );
   --color-accent: #fbb117;
   --color-accent-text: #1a1a1a;
   --color-green: #2f8f5b;
@@ -113,7 +117,7 @@ header span {
   border: 0.125rem solid var(--color-accent);
   border-radius: 1.875rem;
   padding: 0.9375rem 1.875rem;
-  transition: all .15s ease-in;
+  transition: all 0.15s ease-in;
 }
 
 .reserve:hover {
@@ -134,5 +138,84 @@ header span {
 /* start schedule section */
 section#schedule {
   background-color: var(--color-bg);
+}
+.schedule-and-speakers-part {
+  width: 70%;
+}
+.schedule-and-speakers-part ul li {
+  list-style: none;
+  background-color: var(--color-surface);
+  margin-block: 20px;
+  padding: 20px;
+  border-left: solid 5px var(--color-green);
+  border-radius: 10px;
+}
+
+.schedule-and-speakers-content {
+  padding: 3.125rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.know-part {
+  background-color: var(--color-surface);
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  row-gap: 0.9375rem;
+  padding: 2.1875rem;
+  height: fit-content;
+  border-top: solid 0.3125rem var(--color-accent);
+  border-radius: 1rem;
+  position: sticky;
+  top: 12%
+}
+.know-part ul {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  row-gap: 0.625rem;
+}
+
+.speakers {
+  margin-top: 3.125rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "h h"
+    "a b"
+    "c c";
+    gap: 0.9375rem;
+}
+
+.speakers h2 {
+  grid-area: h;
+  margin-bottom: 0.5rem;
+}
+
+.speaker-card {
+  background-color: var(--color-surface);
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.625rem;
+  padding: 1.25rem;
+  border-radius: 0.625rem;
+}
+
+.speaker-card p {
+  color: var(--color-text-muted);
+  font-weight: 500;
+}
+
+.speaker-card.one {
+  grid-area: a;
+}
+
+.speaker-card.two {
+  grid-area: b;
+}
+
+.three {
+  grid-area: c;
 }
 /* end schedule section */
