@@ -28,10 +28,6 @@
   --fs-hero-title: 2.75rem;
   --fs-hero-text: 1rem;
   --fs-heading: 1.25rem;
-  --fs-card-title: 1.0625rem;
-  --fs-body: 0.875rem;
-  --fs-small: 0.8125rem;
-  --fs-label: 0.75rem;
 }
 
 body {
@@ -118,6 +114,7 @@ header span {
   border-radius: 1.875rem;
   padding: 0.9375rem 1.875rem;
   transition: all 0.15s ease-in;
+  width: fit-content;
 }
 
 .reserve:hover {
@@ -219,3 +216,14 @@ section#schedule {
   grid-area: c;
 }
 /* end schedule section */
+
+/* start join section */
+.join-content {
+  padding: 3.125rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  row-gap: 0.9375rem;
+}
+/* end join section */
