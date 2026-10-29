@@ -4,8 +4,34 @@
   box-sizing: border-box;
 }
 
+:root {
+  --color-primary: #1d56c0;
+  --color-hero-start: #1f5bc7;
+  --color-hero-end: #1a8a3f;
+  --gradient-hero: linear-gradient(135deg, var(--color-hero-start), var(--color-hero-end));
+  --color-accent: #fbb117;
+  --color-accent-text: #1a1a1a;
+  --color-green: #2f8f5b;
+  --color-avatar-start: #2b7fc4;
+  --color-avatar-end: #2fa070;
+  --color-bg: #efefef;
+  --color-surface: #ffffff;
+  --color-text: #1a1a1a;
+  --color-text-muted: #333333;
+  --color-text-white: #ffffff;
+  --color-border-input: #555555;
+  --font-family: "Plus Jakarta Sans", sans-serif;
+  --fs-hero-title: 2.75rem;
+  --fs-hero-text: 1rem;
+  --fs-heading: 1.25rem;
+  --fs-card-title: 1.0625rem;
+  --fs-body: 0.875rem;
+  --fs-small: 0.8125rem;
+  --fs-label: 0.75rem;
+}
+
 body {
-  font-family: "Plus Jakarta Sans", sans-serif;
+  font-family: var(--font-family);
 }
 
 .container {
@@ -19,8 +45,8 @@ nav {
   display: flex;
   justify-content: space-between;
   margin: auto;
-  padding: 15px;
-  background-color: #1a56db;
+  padding: 1.5625rem;
+  background-color: var(--color-primary);
   position: fixed;
   top: 0;
   left: 0;
@@ -28,22 +54,22 @@ nav {
 }
 
 nav span {
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 600;
-  color: #ffffff;
+  color: var(--color-text-white);
 }
 
 ul li a {
   text-decoration: none;
-  color: #ffffff;
-  font-size: 14px;
+  color: var(--color-text-white);
+  font-size: var(--fs-small);
   font-weight: 500;
 }
 
 nav ul {
   list-style: none;
   display: flex;
-  column-gap: 15px;
+  column-gap: 0.9375rem;
 }
 /* end nav bar */
 
@@ -51,8 +77,8 @@ nav ul {
 header {
   text-align: center;
   height: 100vh;
-  background: linear-gradient(135deg, #1e3a8a 0%, #0d9488 50%, #10b981 100%);
-  color: #ffffff;
+  background: var(--gradient-hero);
+  color: var(--color-text-white);
   overflow: hidden;
 }
 
@@ -63,44 +89,50 @@ header .hero-content {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  row-gap: 20px;
+  row-gap: 1.25rem;
 }
 
 header h1 {
-  font-size: 48px;
+  font-size: var(--fs-hero-title);
   font-weight: 700;
 }
 
 header p {
-  font-size: 18px;
+  font-size: var(--fs-hero-text);
   font-weight: 400;
 }
 
 header span {
-  font-size: 14px;
+  font-size: var(--fs-hero-text);
   font-weight: 500;
 }
 
 .reserve {
-  margin-top: 10px;
-  background-color: #f59e0b;
-  border: 2px solid #f59e0b;
-  border-radius: 30px;
-  padding: 15px 30px;
+  margin-top: 0.625rem;
+  background-color: var(--color-accent);
+  border: 0.125rem solid var(--color-accent);
+  border-radius: 1.875rem;
+  padding: 0.9375rem 1.875rem;
   transition: all .15s ease-in;
 }
 
 .reserve:hover {
   background-color: transparent;
-  border: #f59e0b 2px solid;
+  border: var(--color-accent) 0.125rem solid;
 }
 
 .reserve:hover a {
-  color: #ffffff;
+  color: var(--color-text-white);
 }
 
 .reserve a {
-  color: #000000;
+  color: var(--color-text);
   text-decoration: none;
 }
 /* end heo section */
+
+/* start schedule section */
+section#schedule {
+  background-color: var(--color-bg);
+}
+/* end schedule section */
